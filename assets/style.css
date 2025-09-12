@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+.main {
+    background-image: url(IMAGES/bg.jpg);
+    background-position: center center;
+    height: 110vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+}
+
+.main .box {
+    height: 110vh;
+    width: 100%;
+    opacity: 0.70;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 65px;
+
+
+}
+
+nav img {
+
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    width: 160px;
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+
+}
+
+signin-btn:hover {
+    background-color: #f40612;
+}
+
+.hero {
+    height: calc(100% - 65px);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    gap: 23px;
+}
+
+.hero span br {
+    text-align: center;
+
+}
+
+
+.hero span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero span:nth-child(1) {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+}
+
+
+.hero span:nth-child(2) {
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.hero span:nth-child(3) {
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.place-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.place-holder input {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+    max-width: 80%;
+    caret-color: rgb(255, 255, 255);
+}
+
+.place-holder input::placeholder {
+
+    color: #8c8c8c;
+    font-size: 1rem;
+}
+
+.place-holder button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #e50914;
+    /* Netflix red */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: 0.3s ease;
+    margin-left: 5px;
+}
+
+.place-holder button:hover {
+    background: #b20710;
+}
+.line{
+    background-color: #490105 ,;
+    height: 11px;
+}
+.line-2{
+    height: 5px;
+    background-color:  rgb(44, 1, 1 );
+    margin-top: 0;
+    
+}
+.text{
+    color: white;
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 65px;
+    font-family: "Martel Sans", sans-serif;;
+
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.cards .card-1 img {
+    width: 180px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.cards .card-1 img:hover {
+    transform: scale(1.08);
+}
+
+.reasons-to-join {
+  cursor: pointer;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+.reasons-to-join h2 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+
+.card-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.reason-card {
+  background: linear-gradient(145deg, #191a38, #231f45);
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 20%;
+  box-shadow: 0 0 15px #250035;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  height: 270px;
+}
+
+
+.reason-card:hover {
+  box-shadow: 0 0 30px #ff416c;
+}
+
+
+.reason-card h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.reason-card p {
+  font-weight: 400;
+  color: #aaaabd;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #ff416c 40%, #250035 80%);
+  box-shadow: 0 0 20px #ff416c;
+  margin-top: auto;
+  align-self: flex-end;
+}
+.tv-icon {
+  background-image: url('IMAGES/pic.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.download-icon {
+  background-image: url('IMAGES/pic2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.telescope-icon {
+  background-image: url('IMAGES/pic3.png')d;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.kids-icon {
+  background-image: url('IMAGES/ppic4.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .card-wrapper {
+    flex-wrap: wrap;
+  }
+  .reason-card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .reason-card {
+    width: 100%;
+  }
+}
+
+/* Responsive: Stack cards on smaller screens */
+@media screen and (max-width: 900px) {
+  .reasons-to-join {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .reason-card {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero span:nth-child(1) {
+        font-size: 8vw;
+    }
+
+    .hero span:nth-child(2) {
+        font-size: 4vw;
+    }
+
+    .hero span:nth-child(3) {
+        font-size: 3.5vw;
+    }
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    nav button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    main {
+        background-position: top center;
+    }
+    .hero {
+        padding: 0 15px;
+        gap: 15px;
+    }
+    .place-holder {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .place-holder input,
+    .place-holder button {
+        width: 90%;
+        max-width: 350px;
+    }
+}
